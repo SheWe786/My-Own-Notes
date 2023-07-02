@@ -63,11 +63,6 @@ function earth(){
 }
 
 
-
-
-
-
-
 //------------------Call BackFun.(Class no. 32)........
 
 // function firstfunc(callbackFn){
