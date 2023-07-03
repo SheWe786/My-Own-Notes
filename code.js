@@ -45,15 +45,16 @@
 // }
 // sum(num1, num2); //Output --> NaN 2 (DOUBT)********************
 
-// Example 3:-
+// Example 3:-(DOUBT)********************
 function spaceShip(funct, num1, num2){
+        console.log(num1, num2);
         funct()
 }
-spaceShip(mars, 10, 20);
-console.log(spaceShip)
+spaceShip(mars, "10", "20");
+
 
 function mars(){
-    
+        console.log("spaceShip");
 }
 function jupiter(){
 
@@ -61,6 +62,28 @@ function jupiter(){
 function earth(){
 
 }
+
+//-------------------------Call By Value----------------(DOUBT)********************
+// Example:- taken from google.
+
+// function changeValue(num) {
+//         num = 10; // Modifying the parameter
+//         console.log(num); // Output: 10
+//       }
+//       let x = 5;
+//       changeValue(x); // Passing the value of x
+//       console.log(x); // Output: 5 (the original value of x is unchanged)
+     
+// //-------------------------Call By Refrence----------------(DOUBT)********************
+      
+// function changeArray(arr) {
+//         arr.push(4); // Modifying the parameter
+//         console.log(arr); // Output: [1, 2, 3, 4]
+//       }
+      
+//       let myArray = [1, 2, 3];
+//       changeArray(myArray); // Passing the reference to myArray
+//       console.log(myArray); // Output: [1, 2, 3, 4] (the original array is modified)
 
 
 //------------------Call BackFun.(Class no. 32)........
@@ -107,7 +130,7 @@ function earth(){
 
 // }
 
-// //------------------------Arrow Funcction-(we do not use "function" keyword)--------------
+// //------------------------Arrow Function-(we do not use "function" keyword)--------------
 // var sumArrow = (a, b)=>{
 //   console.log(a+b);
 // }
