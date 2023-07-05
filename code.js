@@ -46,22 +46,22 @@
 // sum(num1, num2); //Output --> NaN 2 (DOUBT)********************
 
 // Example 3:-(DOUBT)********************
-function spaceShip(funct, num1, num2){
-        console.log(num1, num2);
-        funct()
-}
-spaceShip(mars, "10", "20");
+// function spaceShip(funct, num1, num2){
+//         console.log(num1, num2);
+//         funct()
+// }
+// spaceShip(mars, "10", "20");
 
 
-function mars(){
-        console.log("spaceShip");
-}
-function jupiter(){
+// function mars(){
+//         console.log("spaceShip");
+// }
+// function jupiter(){
 
-}
-function earth(){
+// }
+// function earth(){
 
-}
+// }
 
 //-------------------------Call By Value----------------(DOUBT)********************
 // Example:- taken from google.
@@ -255,6 +255,26 @@ function earth(){
 // console.log(resArrFilter) //Output -> [10, 20, 24, 14, 36]
 
 //----------------=-----------------------ARRAY'S Continue...--(Class no. 35)---------------------------
+
+//---------------------------------Find--------- //It gives number itself what i find in the array Otherwise it gives undefined.
+
+//example:- 1
+let arr1 = [1,2,5,33,44,25,36]
+let resfind1 = arr.find((value)=>{
+        if(value == '44') //when the value not find in array.
+        return true;
+});
+console.log(resfind); //Output :> 44
+
+//example:- 2
+let arr2 = [1,2,5,33,44,25,36]
+let resfind2 = arr.find((value)=>{
+        if(value == '50') //when the value not find in array.
+        return true;
+});
+console.log(resfind); //Output :> undefined
+
+
 
 // (function(){
 //     var a=b=3;
