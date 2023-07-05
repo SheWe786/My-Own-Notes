@@ -260,19 +260,19 @@
 
 //example:- 1
 let arr1 = [1,2,5,33,44,25,36]
-let resfind1 = arr.find((value)=>{
+let resfind1 = arr1.find((value)=>{
         if(value == '44') //when the value not find in array.
         return true;
 });
-console.log(resfind); //Output :> 44
+console.log(resfind1); //Output :> 44
 
 //example:- 2
 let arr2 = [1,2,5,33,44,25,36]
-let resfind2 = arr.find((value)=>{
+let resfind2 = arr2.find((value)=>{
         if(value == '50') //when the value not find in array.
         return true;
 });
-console.log(resfind); //Output :> undefined
+console.log(resfind2); //Output :> undefined
 
 
 
