@@ -254,14 +254,14 @@
 // })
 // console.log(resArrFilter) //Output -> [10, 20, 24, 14, 36]
 
-//----------------=-----------------------ARRAY'S Continue...--(Class no. 35)---------------------------
+//----------------=--------------------ARRAY'S Continue...--(Class no. 35)---------------------------
 
-//---------------------------------Find--------- //It gives number itself what i find in the array Otherwise it gives undefined.
+//-----------------------------Find Value--------- //It gives number itself if i find that no. inside the array Otherwise it gives undefined. NOTE:- (In case of multiple repeated no's. it will return first element)
 
 //example:- 1
 let arr1 = [1,2,5,33,44,25,36]
 let resfind1 = arr1.find((value)=>{
-        if(value == '44') //when the value not find in array.
+        if(value == '44') //when the value not find inside the array.
         return true;
 });
 console.log(resfind1); //Output :> 44
@@ -269,18 +269,60 @@ console.log(resfind1); //Output :> 44
 //example:- 2
 let arr2 = [1,2,5,33,44,25,36]
 let resfind2 = arr2.find((value)=>{
-        if(value == '50') //when the value not find in array.
+        if(value == '50') //when the value not find inside the array.
         return true;
 });
 console.log(resfind2); //Output :> undefined
 
+//-----------------------------Find Index-(T.C => O(n))-------- //It gives number itself if i find that no. inside the array Otherwise it gives -1.
+
+let arr3 = [1,2,5,33,44,25,36]
+let resfind3 = arr3.findIndex((value)=>{
+        if(value == '44') //when the value of index find inside the array.
+        return true;
+});
+console.log(resfind3); //Output :> 4
 
 
-// (function(){
-//     var a=b=3;
-// })();
-// console.log(typeof a !== 'undefined')
-// console.log(typeof b !== 'undefined')
+let arr4 = [1,2,5,33,44,25,36]
+let resfind4 = arr4.findIndex((value)=>{
+        if(value == '45') //when the value of index not find inside the array.
+        return true;
+});
+console.log(resfind4); //Output :> -1
+
+//-----------------------------Find Last-------- //It will start from the last. It gives number itself if i find that no. inside the array Otherwise it gives Undefined.
+let arr5 = [1,2,5,33,44,25,5,36]
+let resfind5 = arr5.findLast((value)=>{
+        if(value == '5') //when the value of index not find inside the array.
+        return true;
+});
+console.log(resfind5); //OutPut -> 5
+
+//-----------------------------Find LastIndex-------- //It will start from the last. It gives number itself if i find that no. inside the array Otherwise it gives -1.
+let arr6 = [1,2,5,33,44,25,5,36]
+let resfind6 = arr6.findLastIndex((value)=>{
+        if(value == '5') //when the value of index not find inside the array.
+        return true;
+});
+console.log(resfind6); //OutPut -> 6
+
+
+//-----------------------------Reduce------------------
+// NOTE :- 1=> It different from Others, It takes two things, it takes callback Functn and it takes Initial Value.
+// 2=> Reduce funtn takes two value, first is "Accumulator" and second is "Value".
+//3=> AT first time "Accumulator" would be Initial value., after that accumulator will be whatever the reduce has stored.
+//4 => Type of Initial value could be anything.(int, strng, booln,..)
+
+let arr7 = [1,2,5,33,44,25,5,36]
+let resfind7 = arr7.reduce((accumulator ,value)=>{ //here in first iteration accu. would be "0" (0+1), after that itereation, accu will be "1"(becaz reduce has stored "1"(0+1=1) and so on.......)
+        return accumulator + value;
+}, 0); //Here 0 is the Initial Value, and it could be anything.
+        
+console.log(resfind7);
+
+//----------------=--------------------ARRAY'S Continue...--(Class no. 36)---------------------------
+
 
 
 //---------------------------Synchronous-------(Perform Operations from top to bottom)
