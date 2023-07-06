@@ -17,11 +17,16 @@
 17--> //------For Of------ //Its printing the Value.
 18--> //------For In------ //Its printing the Key(index).
 19--> --------ForEach---------- :>A function that accepts up to three arguments (value, index, array). forEach calls the callbackfn function one time for each element in the array. in this, foreach traversing in each element in the array. -> Note;- Here-; PAarent - forEach.// callback funct - ()=>{}) this is user functn and execute by ForEach, It DoesNt accept Return Value.
-20--> ------------Map--------- :> Similar as ForEach but it accepted return any value(like- Int, Boolean, String, Obj). It will Create new Array
-20--> -------First Class Funtn.--(In this, funtn treat like as variable.)-----
-// 1:- We can declare variables.
-// 2:- We can paas variables in function as their argumnets.
-// 3:- We can return variables from function.
-20--> ---------Anoynomus Function------(funct without any name)
+21--> ------------Map--------- :> Similar as ForEach but it accepted return any value(like- Int, Boolean, String, Obj). It will Create new Array
+22--> -------First Class Funtn.--(In this, funtn treat like as variable.)-----
+ 1:- We can declare variables.
+ 2:- We can paas variables in function as their argumnets.
+ 3:- We can return variables from function.
+23--> -----------------------------Reduce------------------
+NOTE :- 1=> It different from Others, It takes two things, it takes callback Functn and it takes Initial Value.
+ 2=> Reduce funtn takes two value, first is "Accumulator" and second is "Value".
+ 3=> AT first time "Accumulator" would be Initial value., after that accumulator will be whatever the reduce has stored.
+ 4 => Type of Initial value could be anything.(int, strng, booln,..)
+24--> ---------Anoynomus Function------(funct without any name)
 
 */
