@@ -338,11 +338,11 @@
 // console.log(resfind7);
 
 //Example-> Initial value is boolen. It takes True=1, and False=0.
-let arr7 = [1,2,5]
-let resfind7 = arr7.reduce((accumulator ,value)=>{ 
-        return accumulator + value;
-}, true); //(It takes by default true is 1)
-console.log(resfind7); //OutPut => 9 
+// let arr7 = [1,2,5]
+// let resfind7 = arr7.reduce((accumulator ,value)=>{ 
+//         return accumulator + value;
+// }, true); //(It takes by default true is 1)
+// console.log(resfind7); //OutPut => 9 
         
 
 //----------------=--------------------ARRAY'S Continue...--(Class no. 36)---------------------------
@@ -360,19 +360,46 @@ console.log(resfind7); //OutPut => 9
         
 
 //Example:- Double the numb. of array.------
-//way1:- ---------Using map.-------
+//way1:- ---------Using map.------------
 // let arr9 = [1,2,3]
 // let resfind9 = arr9.map((value)=>{ 
 //        return value *2;
 // },);
 // console.log(resfind9);
        
-//way2:- --------Using Reduce.---
+//way2:- --------Using Reduce.------------
 // let arr10 = [1,2,3]
 // let resfind10 = arr10.reduce((accu , value)=>{ 
 //        return accu value *2;
 // }, []); // Here the initial value of accu is Blank Array[].
 // console.log(resfind10);
+
+//-----------------------------Copy Of Array------------------
+//------------Way-1 (For loop)---------------
+// let arr = [1,2,3,4]
+// let copyArr = [];
+// for(let item of arr){
+//         copyArr.push(item);
+// }
+// copyArr.push(100);
+// console.log(arr); //OutPut => [1, 2, 3, 4]
+// console.log(copyArr); //OutPut => [1, 2, 3, 4,100]
+
+//------------Way-2(Map)---------------
+// let arr = [1,2,3,4]
+// let copyArr = arr.map((value) => {  //map has its own blank array. 
+//         return value; //It storing the return value in its own arr.
+// })
+// copyArr.push(200);
+// console.log(arr); //OutPut => [1, 2, 3, 4]
+// console.log(copyArr)  //OutPut => [1, 2, 3, 4, 200]
+
+//------------Way-3(...Spread operator)---------------
+let arr = [1,2,3,4]
+let copyArr = [...arr]; //...arr = 1,2,3,4 it copy the arr without boundry walls.
+copyArr.push(201);
+console.log(arr); //OutPut => [1, 2, 3, 4]
+console.log(copyArr)  //OutPut => [1, 2, 3, 4, 200]
 
 
         
